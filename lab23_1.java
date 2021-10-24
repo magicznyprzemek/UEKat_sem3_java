@@ -1,3 +1,7 @@
+//U¿ytkownik podaje n ³añcuchów. Nale¿y zapamiêtaæ ³añcuch
+//najd³u¿szy. Podaæ, ile ma znaków i go wypisaæ.
+//Policzyæ wyst¹pienia litery podanej przez u¿ytkownika w //³añcuchu
+//(podanym przez u¿ytkownika).
 
 //package gradleproject1;
 import java.util.*;
