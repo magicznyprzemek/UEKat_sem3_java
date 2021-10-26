@@ -20,20 +20,24 @@ public class Main
     //  compareTo ---
     static public int compareTo(String x, String y)
     {
-        int ValueX, ValueY;
-        ValueX=CountLoop(x);
-        ValueY=CountLoop(y);
-        return (ValueX-ValueY);
-    }
-    static public int CountLoop(String x)
-    {
-        int value=0;
-        for(int i=0; i<x.length(); i++)
+        if(x.length()>y.length())
         {
-            value+=(int)x.charAt(i);
+            return (y.length()-x.length())*(-1);
         }
-        return value;
+        else if(x.length()>=y.length())
+        {
+            for(int i=0; i<x.length(); i++)
+            {
+                boolean isSame=true;
+                if(x.charAt(i)!=y.charAt(i))
+                {
+                    return (int)x.charAt(i)-(int)y.charAt(i);
+                }
+            }
+        }
+        return 0;
     }
+
     // endsWith ----
     static public boolean endsWith(String x, String y)
     {
