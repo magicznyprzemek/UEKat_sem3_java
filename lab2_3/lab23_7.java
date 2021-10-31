@@ -1,5 +1,8 @@
 package com.company;
 
+//Napisz metodę odwrotną do powyższej, która dla tablicy wejściowej
+//zawierającej elementy String zwraca łańcuch znaków.
+
 public class Main {
     public static String MergeStrings(String[] array, String inBetween)
     {
